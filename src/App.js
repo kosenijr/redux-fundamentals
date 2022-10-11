@@ -1,21 +1,11 @@
 import React, { useReducer, useState } from 'react';
-import { STEPS } from './constants';
+import { STEPS, initialFormValues } from './constants';
 import Layout from './components/Layout';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import PersonalInformationForm from './components/PersonalInformationForm';
 import ProfileInformationForm from './components/ProfileInformationForm';
 import NotificationSettingsForm from './components/NotificationSettingsForm';
 import SuccessScreen from './components/SuccessScreen';
-
-const initialFormValues = {
-  first_name: '',
-  last_name: '',
-  email: '',
-  username: '',
-  about: '',
-  email_notifications: true,
-  email_promotions: false
-}
 
 const App = () => {
   const [progress, setProgress] = useState(25);

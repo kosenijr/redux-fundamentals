@@ -4,3 +4,13 @@ export const STEPS = {
   NOTIFICATION_SETTINGS: 'NOTIFICATION_SETTINGS',
   SUCCESS: 'SUCCESS'
 }
+
+export const initialFormValues = {
+  first_name: '',
+  last_name: '',
+  email: '',
+  username: '',
+  about: '',
+  email_notifications: true,
+  email_promotions: false
+}
