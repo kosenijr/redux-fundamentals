@@ -19,7 +19,7 @@ const initialFormValues = {
 
 const App = () => {
   const [progress, setProgress] = useState(25);
-  const [step, setStep] = useState(STEPS.NOTIFICATION_SETTINGS);
+  const [step, setStep] = useState(STEPS.PERSONAL_INFO);
   const [formValues, setFormValues] = useReducer((oldFormValues, newFormValues) => {
     return {
       ...oldFormValues,
