@@ -43,6 +43,7 @@ export default function PersonalInformationForm({changeStep, changeProgress, for
         <Form.Group className='mb-4'>
           <Form.Label>Email</Form.Label>
           <Form.Control
+            required
             type='text'
             value={formValues.email}
             onChange={(e) => setFormValues({email: e.target.value})}

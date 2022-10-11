@@ -34,6 +34,7 @@ export default function ProfileInformationForm({ changeStep, changeProgress, for
         <Form.Group className='mb-4'>
           <Form.Label>About</Form.Label>
           <Form.Control
+            required
             as='textarea'
             type='textarea'
             value={formValues.about}
